@@ -1,0 +1,100 @@
+@import "mixins";
+
+body, button, input, select, textarea {
+  // font-size: $font-size-base;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+  // line-height: 1;
+}
+body {
+  background-color: #FEF9F5;
+}
+a {
+  color: #686868;
+  text-decoration: none;
+
+  &:active {
+    color: $link-active-color;
+  }
+}
+
+html, body {
+  // overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.pad20{
+	padding: 0 20px;
+}
+.arrow{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.arrow::after{
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-top: 2px solid #333;
+  border-left: 2px solid #333;
+  transform: rotate(135deg);
+  display: block;
+	margin-right: 10px;
+}
+.arrow1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.arrow1::after{
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #333;
+  border-left: 2px solid #333;
+  transform: rotate(135deg);
+  display: block;
+	margin-right: 10px;
+}
+// 内页
+.title{
+	font-size: 30px;
+	font-weight: 600;
+	color: #000000;
+	margin: 40px 0;
+	text-align: center;
+}
+.ellipse{
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.ellipse2{
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	white-space: normal !important;
+	word-wrap: break-word;
+}
+.ellipse3{
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	white-space: normal !important;
+	word-wrap: break-word;
+}
+.positionA{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	background: #FEF9F5;
+	padding-bottom: 40px;
+}
